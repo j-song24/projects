@@ -179,6 +179,17 @@ body {
     padding-bottom: 50px;
 }
 
+.user-icon {
+  display: artist-icon;
+  max-width: 35%;
+  max-height: 35%;
+  vertical-align: top;
+  float: left;
+}
+
+.Opportunity {
+    color: #04a9bf;
+}
 
 
 
