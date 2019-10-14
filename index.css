@@ -191,9 +191,47 @@ body {
     color: #04a9bf;
 }
 
+#submeetca{
+    color: #21bab4;
+    font-weight: bolder;
+    line-height: 36px;
+}
 
+#gavelerCover{
+    max-width: 97%;
+}
 
+#hearsayCover{
+    padding: 8%;
+}
 
+#flowCover, #controlCover {
+    padding: 2%;
+}
+
+.controlimg{
+    max-width: 50%;
+    float: left;
+}
+
+.controldesc{
+    padding-left: 55%;
+    margin-top: -5%
+}
+
+.descImg{
+    max-width: 50%;
+    height: auto;
+    display:block;
+    margin:auto;
+}
+
+.controlScreens {
+    max-width: 100%;
+    height: auto;
+    display:block;
+    margin:auto;
+}
 
 
 
