@@ -119,6 +119,9 @@ nav.nav-center ul li a {
   line-height: 2.5rem;
 }
 
+.color-text {
+  color: #dd5533
+}
 
 /*Styling on index.html*/
 
@@ -281,17 +284,27 @@ mark {
   overflow: visible;
 }
 
+#morph5 {
+  max-width: 100%;
+  max-height: 100%;
+  fill: #cbdae3;
+  opacity: 0.50;
+  z-index: -1;  
+  overflow: visible;
+}
+
+
 /*Adjusting size of project photos*/
 #hearsay-cover {
   max-width: 90%;
 }
 
-#submeet-cover {
+.max-cover {
   max-width: 100%;
 }
 
 #gaveler-cover {
-  max-width: 90%;
+  max-width: 80%;
 }
 
 #ATH-cover {
@@ -365,15 +378,33 @@ mark {
 
 .overlapping-4 li:nth-child(1) {
     grid-row: 1 / span 2;
-    grid-column: 2 / span 4;
+    grid-column: 1 / span 4;
     z-index: 2;
 }
 
 .overlapping-4 li:nth-child(2) {
     grid-row: 1 / span 2;
-    grid-column: 1 / span 3;
+    grid-column: 1 / span 2;
 }
 
+/*Overlapping Grid for Acoustic Art*/
+
+.overlapping-5 ul {
+    display: grid;
+    grid-template-columns: 4fr 4fr 4fr 4fr;
+    max-width: 600px;
+}
+
+.overlapping-5 li:nth-child(1) {
+    grid-row: 1 / span 2;
+    grid-column: 1 / span 4;
+    z-index: 2;
+}
+
+.overlapping-5 li:nth-child(2) {
+    grid-row: 2 / span 2;
+    grid-column: 1 / span 4;
+}
 
 /*Styling in About.html*/
 
@@ -458,6 +489,14 @@ mark {
 /*Styling for hearsay Project in hearsay.html*/
 #concertgoer-img {
   max-width: 45%;
+}
+
+/*Styling for Acoustic Art*/
+#comment {
+  max-width: 70%;
+}
+.affinity {
+  max-width: 70%;
 }
 
 
