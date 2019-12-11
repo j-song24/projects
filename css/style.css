@@ -272,13 +272,26 @@ mark {
   overflow: visible;
 }
 
+#morph4 {
+  max-width: 100%;
+  max-height: 100%;
+  fill: #b6e18c;
+  opacity: 0.50;
+  z-index: -1;  
+  overflow: visible;
+}
+
 /*Adjusting size of project photos*/
 #hearsay-cover {
-  max-width: 150%;
+  max-width: 90%;
 }
 
 #submeet-cover {
   max-width: 100%;
+}
+
+#gaveler-cover {
+  max-width: 90%;
 }
 
 #ATH-cover {
@@ -314,7 +327,7 @@ mark {
 
 .overlapping-2 li:nth-child(1) {
     grid-row: 1 / span 2;
-    grid-column: 2 / span 2;
+    grid-column: 1 / span 4;
     z-index: 2;
 }
 
@@ -341,6 +354,26 @@ mark {
     grid-row: 1 / span 2;
     grid-column: 1 / span 3;
 }
+
+/*Overlapping Grid for Gaveler*/
+
+.overlapping-4 ul {
+    display: grid;
+    grid-template-columns: 4fr 4fr 4fr 4fr;
+    max-width: 600px;
+}
+
+.overlapping-4 li:nth-child(1) {
+    grid-row: 1 / span 2;
+    grid-column: 2 / span 4;
+    z-index: 2;
+}
+
+.overlapping-4 li:nth-child(2) {
+    grid-row: 1 / span 2;
+    grid-column: 1 / span 3;
+}
+
 
 /*Styling in About.html*/
 
