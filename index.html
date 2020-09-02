@@ -1,52 +1,196 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <!--Import Google Font-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Jesse Song Portfolio</title>
+  <link rel="shortcut icon" type="image/x-icon" href="imgs/home-imgs/logo.ico" />
 
-    <!--Import materialize.css-->
-    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
-    <link type="text/css" rel="stylesheet" href="index.css" media="screen,projection" />
 
-    <!--Let browser know website is optimized for mobile-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
 </head>
-
 <body>
-    <nav>
-        <div class="nav-wrapper">
-            <div class="row">
-                <div id="logodiv" class="col s0 m1 offset-m1">
-                        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
 
-                    <a href="index.html" class="brand-logo">
-                        <span class="helper"></span>
-                        <img src="./images/logo.png">
-                    </a>
-                </div>
-                <div class="col s0 m3 offset-m6">
-                    <ul id="nav-mobile" class="right hide-on-med-and-down">
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="resume.html">Resume</a></li>
-                        <li><a href="paintings.html">Fun</a></li>
-                    </ul>
-                </div>
+
+<div class="main">
+  <!-- Creating a fixed upper navigation bar -->
+  <div class="navbar-fixed">
+    <nav class="nav-center" role="navigation">
+      <div class="nav-wrapper container">
+          <ul>
+              <li>
+                <a href="about.html">About</a>
+                </li>
+              <li>
+                <a href="index.html"><img id="logo" src="imgs/home-imgs/logo.png" width="50px">
+                  </a> 
+                </li>
+              <li>
+                <a href="resume.html">Resume</a>
+                </li>
+          </ul>
+      </div>
+  </nav>
+</div>
+
+<!-- Creating the introduction text on the home page, using full width, centered column -->
+    <div class="section">
+      <div class="container">
+        <h3 class="header center main-text">Hi, I'm <mark>Jesse Song!</mark></h3>
+        <div class="row center">
+          <h5 class="header col s12 main-text">I am a multifaceted <span class="underline">UX designer</span>, <span class="underline">ultimate frisbee enthusiast</span> and <br>
+              <span class="underline">amateur star gazer.</span></h5>
+        </div>
+
+<!-- Adding background images and integrating JS library rellax to create parallax scrolling experience. Left planet is scrolling at a faster speed than the right planet. -->
+        <img src="imgs/parallax-imgs/astronomy-left.svg" class="planet-left rellax" data-rellax-speed="10"/>
+        <img src="imgs/parallax-imgs/astronomy-right.svg" class="planet-right rellax" data-rellax-speed="5"/>
+
+      <div class="row center">
+        <div class="col s12">
+          <img id="portfolio-pic" src="imgs/home-imgs/Portfolio Photo.png"/>
+        </div>
+      </div>
+
+<!-- A clickable icon that will jump to projects -->
+      <div class="row center">
+        <a href="#projects">
+          <div class="col s12">
+            <img id="star-icon" src="imgs/home-imgs/star.svg"/>
+          </div>
+          <div class="col s12">
+            See projects
+          </div>
+        </a>
+      </div>
+    </div> 
+ </div>
+
+
+
+  <div class="container">
+    <div class="section">
+
+      <div class="row">
+        <div class="col s12">
+          <h3 id="projects">Projects</h3>
+        </div>
+      </div>
+
+
+<section class="gallery">
+  <div class="container">
+    <div class="grid">
+
+
+      <div class="column-xs-12 column-md-4">
+      <a href="amazon.html">
+        <div class="card">
+        <figure class="img-container">
+          <img class="img-gallery" src="imgs/Amazon/amazon.png" />
+        </figure>
+        <div class="custom-image-desc-layer">
+          <h4 class="custom-image-desc">Amazon.<br><br>UX Design Internship Summer 2020.</h4>
             </div>
         </div>
-    </nav>
-    <ul class="sidenav" id="mobile-demo">
-        <li><a href="about.html">About</a></li>
-        <li><a href="resume.html">Resume</a></li>
-        <li><a href="paintings.html">Fun</a></li>
-    </ul>
-        <div class="row" style="margin-top: 30px;">
-        <div class="col s12 m5 offset-m1" style="padding-right:15px;">
+      </a>
+    </div>
+
+      <div class="column-xs-12 column-md-4">
+      <a href="AcousticArt.html">
+        <div class="card">
+          <figure class="img-container">
+            <video class="img-gallery" playsinline autoplay muted loop poster="imgs/AcousticArt/AACover.png">
+              <source src="imgs/AcousticArt/AAVideo.mp4" type="video/mp4">
+            </video>
+          </figure>
+        <div class="custom-image-desc-layer">
+          <h4 class="custom-image-desc">Acoustic Art.<br><br>User Research & UX Design.</h4>
+            </div>
+        </div>
+      </a>
+    </div>
+
+      <div class="column-xs-12 column-md-4">
+        <a href="submeet.html">
+          <div class="card">
+          <figure class="img-container">
+            <img class="img-gallery" src="imgs/submeet/submeetmockups.png" />
+          </figure>
+          <div class="custom-image-desc-layer">
+            <h4 class="custom-image-desc">Submeet.<br><br>Mobile UX Design.</h4>
+              </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="column-xs-12 column-md-4">
+        <a href="hearsay.html">
+          <div class="card">
+          <figure class="img-container">
+            <img class="img-gallery" src="imgs/home-imgs/hearsaycover.png" />
+          </figure>
+          <div class="custom-image-desc-layer">
+            <h4 class="custom-image-desc">hearsay.<br><br>UX Design.</h4>
+              </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="column-xs-12 column-md-4">
+        <a href="gaveler.html">
+          <div class="card">
+          <figure class="img-container">
+            <video class="img-gallery" playsinline autoplay muted loop poster="imgs/AcousticArt/AACover.png">
+              <source src="imgs/Gaveler/gavelercover.mp4" type="video/mp4">
+            </video>
+          </figure>
+        <div class="custom-image-desc-layer">
+          <h4 class="custom-image-desc">Dog and Rooster.<br>Gaveler<br>Web Design Internship 2019.</h4>
+            </div>
+        </a>
+      </div>
+
+      <div class="column-xs-12 column-md-4">
+        <a href="ATH.html">
+          <div class="card">
+          <figure class="img-container">
+            <video class="img-gallery" playsinline autoplay muted loop poster="imgs/home-imgs/ATH-.png">
+              <source src="imgs/ATH/ATHcover.mp4" type="video/mp4">
+            </video>
+          </figure>
+        <div class="custom-image-desc-layer">
+          <h4 class="custom-image-desc">Atlantis Transportation Hub.<br>Environment Design.</h4>
+            </div>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+<footer>
+  <div class="container">
+    <div class="grid">
+      <div class="column-xs-12">
+        <p class="copyright">&copy; Copyright 2020 Jesse Song</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+<!--   <div class="row flex-s" style="margin-top: 30px;">
+        <div class="col s12 m5 offset-m1 order-1" style="padding-right:15px;">
             <a href="submeet.html">
                 <div class="card">
                     <div class="card-image">
-                        <img class="custom-image" src="./images/submeet/submeetbannerphoto.png">
+                        <img class="custom-image" src="imgs/home-imgs/UCRE.png">
                     </div>
                     <div class="custom-image-desc-layer">
                         <h4 class="custom-image-desc">Submeet.<br><br>Mobile UX Design.</h4>
@@ -54,79 +198,204 @@
                 </div>
             </a>
         </div>
-        <div class="col s12 m5" style="padding-right:15px;">
-            <a href="gaveler.html">
-                <div class="card">
-                    <div class="card-image">
-                        <img class="custom-image" id="gavelerCover" src="./images/Gaveler/protestoricon.png">
-                    </div>
-                    <div class="custom-image-desc-layer">
-                        <h4 class="custom-image-desc">Gaveler.<br><br>Mobile UX Design.</h4>
-                    </div>
-                </div>
-            </a>
-        </div>
-    </div>
-    <div class="row" style="margin-top: 30px;">
         <div class="col s12 m5 offset-m1" style="padding-right:15px;">
+            <a href="submeet.html">
+                <div class="card">
+                    <div class="card-image">
+                        <img class="custom-image" src="imgs/home-imgs/submeetbannerphoto.png">
+                    </div>
+                    <div class="custom-image-desc-layer">
+                        <h4 class="custom-image-desc">Submeet.<br><br>Mobile UX Design.</h4>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    </div>
+      <div class="row" style="margin-top: 30px;">
+        <div class="col s12 m5 offset-m1" style="padding-right:15px;">
+            <a href="submeet.html">
+                <div class="card">
+                    <div class="card-image">
+                        <img class="custom-image" src="imgs/home-imgs/UCRE.png">
+                    </div>
+                    <div class="custom-image-desc-layer">
+                        <h4 class="custom-image-desc">Submeet.<br><br>Mobile UX Design.</h4>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div> -->
+ 
+<!--  One row containing a project descrption and an image 
+      <div class="row flex-s">
+        <div class="col s12 m6 order-2">
+          <a href="AcousticArt.html">
+            <div class="icon-block">
+              <h5 class="">User Research & UX Design</h5>
+              <h4>Acoustic Art</h4>
+
+              <p class="light">
+                An app that incorporates multisensory features to facilitate conversaton around public art through music/comment-sharing. 
+              </p>
+              <p class="hvr-wobble-horizontal"> Read More <img class="hvr-wobble-horizontal" src="imgs/home-imgs/arrow.svg"/>
+              </p>
+            </div>
+          </a>
+        </div>
+        <div class="col s12 m6 order-1">
+          <div class="overlapping-5 card-graphics5">
+            <a href="AcousticArt.html">
+              <ul class="grid-container">
+                <li><img class="max-cover" src="imgs/home-imgs/UCRE.png" alt=""></li>
+                <li><svg id="morph5" height="100%" width="100%" preserveAspectRatio="none" viewBox="0 0 1109.8 816.54">
+                    <path class="morph5" d="M1171.33,144.78C1283.09,300.94,1064,868.36,639.61,885.9,355.85,897.63,71.51,659.73,91.47,483.71,124.87,189.21,1024.56-60.3,1171.33,144.78Z"></path></svg></li>
+              </ul>
+            </a>
+      </div>
+    </div>
+  </div>
+      <br><br><br>
+ One row containing a project descrption and an image 
+      <div class="row flex-s">
+        <div class="col s12 m6 order-1">
+          <div class="overlapping-1 card-graphics1">
+            <a href="submeet.html">
+              <ul class="grid-container">
+                <li><img class="max-cover" src="imgs/home-imgs/submeetbannerphoto.png" alt=""></li>
+                <li><svg id="morph1" height="100%" width="100%" preserveAspectRatio="none" viewBox="0 0 1109.8 816.54">
+                    <path class="morph1" d="M1171.33,144.78C1283.09,300.94,1064,868.36,639.61,885.9,355.85,897.63,71.51,659.73,91.47,483.71,124.87,189.21,1024.56-60.3,1171.33,144.78Z"></path></svg></li>
+              </ul>
+            </a>
+      </div>
+    </div>
+        <div class="col s12 m6 order-2">
+          <a href="submeet.html">
+            <div class="icon-block">
+              <h5 class="">UX Design</h5>
+              <h4>Submeet</h4>
+
+              <p class="light">
+                A matchmaking app that helps Carnegie Mellon students to find subletters via shared connections
+              </p>
+              <p class="hvr-wobble-horizontal"> Read More <img class="hvr-wobble-horizontal" src="imgs/home-imgs/arrow.svg"/>
+              </p>
+            </div>
+          </a>
+        </div>
+  </div>
+
+One row containing a project descrption and an image 
+      <br><br><br>
+    <div class="row flex-s">
+        <div class="col s12 m6 order-2">
+          <a href="hearsay.html">
+            <div class="icon-block">
+              <h5 class="">UX Design</h5>
+              <h4>hearsay.</h4>
+              <p class="light">
+                An application that fosters social connection between local artists and local concertgoers
+              </p>
+              <p class="hvr-wobble-horizontal"> Read More <img class="hvr-wobble-horizontal" src="imgs/home-imgs/arrow.svg"/>
+              </p>
+            </div>
+          </a>
+        </div>
+        <div class="col s12 m6 order-1">
+          <div class="overlapping-2 card-graphics2">
             <a href="hearsay.html">
-                <div class="card">
-                    <div class="card-image">
-                        <img class="custom-image" id="hearsayCover" src="./images/hearsay/hearsaycover.png">
-                    </div>
-                    <div class="custom-image-desc-layer">
-                        <h4 class="custom-image-desc">hearsay.<br><br>Mobile UX Design.</h4>
+              <ul class="grid-container">
+                <li><img id="hearsay-cover" src="imgs/home-imgs/hearsaycover.png" alt=""></li>
+                <li><svg id="morph2" height="100%" width="100%" preserveAspectRatio="none" viewBox="0 0 896.46 689.5">
+                    <path class="morph2" d="M849,573c-183.47,125-697.87-233.46-659-359C226.51,96.09,791.5,53.31,902,295,942.6,383.8,926.15,520.41,849,573Z"></path></svg></li>
+              </ul>
+            </a>
+      </div>
+    </div>
+      </div>
 
-                    </div>
-                </div>
+ One row containing a project descrption and an image 
+      <br><br><br>
+    <div class="row flex-s">
+        <div class="col s12 m6 order-1">
+          <div class="overlapping-4 card-graphics4">
+            <a href="gaveler.html">
+              <ul class="grid-container">
+                <li><img id="gaveler-cover" src="imgs/home-imgs/protestoricon.png" alt=""></li>
+                <li><svg id="morph4" height="100%" width="100%" preserveAspectRatio="none" viewBox="0 0 839.04 648.61">
+                    <path class="morph4" d="M1241,200c54,123.53-69.52,313.49-209,403C715.5,806.11,178.17,580.9,166,404,156.37,264,473.43,121.34,709,85,745.19,79.42,1161.92,19.07,1241,200Z"></path></svg></li>
+              </ul>
             </a>
         </div>
-        <div class="col s12 m5" style="padding-right:15px;">
+      </div>
+        <div class="col s12 m6 order-2">
+          <a href="gaveler.html">
+            <div class="icon-block">
+              <h5>UX Design</h5>
+              <h5>Dog and Rooster</h5>
+              <h4>Gaveler</h4>
+              <p class="light">
+                An application that keeps users informed about current events: notably about court cases and judge rulings. An application that gives users a voice about the judicial system.</p>
+              <p class="hvr-wobble-horizontal"> Read More <img class="hvr-wobble-horizontal" src="imgs/home-imgs/arrow.svg"/>
+              </p>
+            </div>
+          </a>
+        </div>
+    </div>
+      <br><br><br>
+
+
+ One row containing a project descrption and an image 
+
+      <div class="row flex-s">
+        <div class="col s12 m6 order-2">
+          <a href="ATH.html">
+            <div class="icon-block">
+              <h5 class="">Data Driven Display</h5>
+              <h4>Atlantis Transportation Hub</h4>
+              <p class="light">
+                A gesture-based digital transportation display that revolves around the theme of flexibility, customizability and itinerary planning
+              </p>
+              <p class="hvr-wobble-horizontal"> Read More <img class="hvr-wobble-horizontal" src="imgs/home-imgs/arrow.svg"/>
+              </p>
+            </div>
+          </a>
+        </div>
+        <div class="col s12 m6 order-1">
+          <div class="overlapping-3 card-graphics3">
             <a href="ATH.html">
-                <div class="card">
-                    <div class="card-image">
-                        <img class="custom-image" id="ATHCover" src="./images/ATH/ATH Cover Photo.png">
-                    </div>
-                    <div class="custom-image-desc-layer">
-                        <h4 class="custom-image-desc">Atlantis Transportation Hub.<br><br>Environment Design.</h4>
-                    </div>
-                </div>
+              <ul class="grid-container">
+                <li><img id="ATH-cover" src="imgs/home-imgs/ATH.png" alt=""></li>
+                <li><svg id="morph3" height="100%" width="100%" preserveAspectRatio="none" viewBox="0 0 795.2 535.1">
+                    <path class="morph3" d="M1054.49,301c36.69,116.52-316.87,455.19-588.24,365C148.66,560.5,374.66,40.37,634.2,165.23,876.19,281.64,1032,229.71,1054.49,301Z"></path></svg></li>
+              </ul>
             </a>
+      </div>
         </div>
+      </div>
+      <br><br><br>
+
+    <div class="row center">
+      <div class="col s12">
+          <a href="#top"><p> Back to Top </p></a>
+        </div>
+    </div>  -->  
+
+
+
+      </div>
     </div>
+  </div>
 
-    <div class="row" style="margin-top: 30px;">
-        <div class="col s12 m5 offset-m1" style="padding-right: 15px;">
-            <a href="control redesign.html">
-                <div class="card">
-                    <div class="card-image">
-                        <img class="custom-image" id="controlCover" src="./images/control/restaurant worker icon.png">
-                    </div>
-                    <div class="custom-image-desc-layer">
-                        <h4 class="custom-image-desc">Refrigerator Temperature Control Redesign.<br><br>Product Design.</h4>
-                    </div>
-                </div>
-            </a>
-        </div>
-        <div class="col s12 m5" style="padding-right:15px;">
-            <a href="flow.html">
-                <div class="card">
-                    <div class="card-image">
-                        <img class="custom-image" id="flowCover" src="./images/flow/flowcovericon.png">
-                    </div>
-                    <div class="custom-image-desc-layer">
-                        <h4 class="custom-image-desc">Flow!<br><br>Game Design.</h4>
-                    </div>
-                </div>
-            </a>
-        </div>
-    </div>
-        
 
-    <!--JavaScript at end of body for optimized loading-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-    <script type="text/javascript" src="js/materialize.min.js"></script>
-    <script type="text/javascript" src="js/navmenu.js"></script>
-</body>
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.10.0/rellax.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"></script>
+  <script src="js/main.js" type="text/javascript"></script>
 
+  </body>
 </html>
